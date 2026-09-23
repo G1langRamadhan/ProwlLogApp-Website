@@ -59,19 +59,20 @@
         <li><strong>Camera, photos, and location:</strong> content and location accessed through iOS permissions
           only when needed for the feature you request.</li>
         <li><strong>Published World CATalog content:</strong> if you choose to publish a cat, a limited copy of
-          it — its cover and thumbnail photo, name, breed, coat, the date it was published, the display name
-          shown on your profile, and an approximate country and location rounded to about 0.1° (roughly 11 km)
-          — is stored in a public database that other ProwlLog users can browse. We never publish your notes,
-          address, precise coordinates, or feeding history for that cat.</li>
+          it — its cover and thumbnail photo, name, breed, coat, the date you first recorded the cat, the
+          display name shown on your profile, and an approximate country and location rounded to about 0.1°
+          (roughly 11 km) — is stored in a public database that other ProwlLog users can browse. We never
+          publish your notes, address, precise coordinates, or feeding history for that cat.</li>
         <li><strong>Content reports:</strong> if you report another user’s published cat, we receive the
           reported cat’s identifier and details of your report so we can review it.</li>
         <li><strong>Purchase information:</strong> product, transaction, and entitlement status supplied by
           Apple so the app can determine whether Pro features are unlocked. We do not receive your full payment
           card or bank-account details.</li>
-        <li><strong>Analytics:</strong> aggregated, non-identifying product-usage events — such as which
-          screens or features are used, and how often — processed through Mixpanel, our analytics provider, to
-          understand and improve the app. These events are not linked to your name, photos, or CATalog content.
-          See <a class="inline" href="#analytics">Section 7</a>.</li>
+        <li><strong>Analytics:</strong> product-usage events — such as which screens or features are used,
+          and how often — processed through Mixpanel, our analytics provider, to understand and improve the
+          app. These events are associated with a device or installation identifier so we can understand how the
+          app is used over time, but we never send Mixpanel your cat names, photos, notes, location, or other
+          CATalog content. See <a class="inline" href="#analytics">Section 7</a>.</li>
         <li><strong>Diagnostics:</strong> if you have chosen to share analytics or crash reports with developers
           through Apple, we may receive limited technical and diagnostic information to identify crashes and
           improve reliability.</li>
@@ -138,17 +139,20 @@
       </p>
       <ul class="legal__list">
         <li><strong>What is published:</strong> the cat’s cover and thumbnail photo, name, breed, coat, the
-          date it was published, the display name on your profile, and an approximate location — country and
-          coordinates rounded to about 0.1° (roughly 11 km).</li>
+          date you first recorded the cat, the display name on your profile, and an approximate location —
+          country and coordinates rounded to about 0.1° (roughly 11 km).</li>
         <li><strong>What is never published:</strong> your notes, address, precise coordinates, and feeding
-          history stay private, even for a published cat.</li>
+          history stay private, even for a published cat. Before a photo is published it is re-encoded to
+          remove embedded metadata, including any GPS coordinates the original image carried.</li>
         <li><strong>Limits:</strong> you can publish up to 4 cats regardless of subscription tier. Browsing
           other users’ published cats beyond a limited free allowance requires ProwlLog Pro. A country is
           required to publish; the app determines it from the cat’s sighting location.</li>
         <li><strong>Removing a published cat:</strong> you can unpublish a cat at any time from Cat Detail, or
           from the public viewer if the private cat is no longer on your device. Removing a cat also removes it
-          from other users’ browsing feed going forward, but we cannot remove a copy someone already saved, such
-          as a screenshot.</li>
+          from other users’ browsing feed going forward, but we cannot remove a copy someone already saved.</li>
+        <li><strong>Copies other users can keep:</strong> while a cat is published, other ProwlLog users can
+          save its photo to their own device or share it outside the app from the in-app viewer, as well as take
+          a screenshot. A copy made that way can remain with them after you unpublish the cat.</li>
         <li><strong>Reporting, hiding, and blocking:</strong> if you find another user’s published cat
           objectionable, you can report it (we store the report so we can review it), hide it, or block that
           user’s future published cats from appearing to you. Hiding and blocking take effect on your device and
@@ -202,7 +206,7 @@
 
       <h2>11. Purchases</h2>
       <p>
-        ProwlLog Pro subscriptions and the Nine Lives one-time purchase are processed by Apple through StoreKit.
+        The ProwlLog Pro yearly subscription and the Nine Lives one-time purchase are processed by Apple through StoreKit.
         The app receives transaction and entitlement information needed to unlock, manage, and restore access.
         Apple handles your payment method, billing data, and refunds under Apple’s terms and privacy policy.
       </p>
